@@ -4,9 +4,6 @@
 **Bola Zone** is an open-source application that provides information about the **Liga 1 Indonesia**. Created using **Flutter** with the principles of **Clean Architecture** and supported by **BLoC** state management, as well as implementing beautiful UI/UX design.
 
 
-![Logo](https://github.com/agisrh/Flutter-Bola-Zone/blob/master/assets/images/bola_zone.png?raw=true)
-
-
 ## Screenshots
 
 ![App Screenshot](https://github.com/agisrh/Flutter-Bola-Zone/blob/master/screenshoots/screenshoot.png?raw=true)
