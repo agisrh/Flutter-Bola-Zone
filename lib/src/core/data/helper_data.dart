@@ -1,0 +1,9 @@
+//export 'app_model.dart';
+export 'local/service_data.dart';
+export 'models/service_model.dart';
+export 'models/team_model.dart';
+export 'models/match_model.dart';
+export 'models/standing_model.dart';
+export 'models/player_model.dart';
+export 'models/team_statistic_model.dart';
+export 'models/player_statistic_model.dart';

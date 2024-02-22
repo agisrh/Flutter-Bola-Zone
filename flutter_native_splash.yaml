@@ -1,0 +1,8 @@
+flutter_native_splash:
+  color: "#16A75C"
+  image: "assets/images/bola_zone_round.png"
+  android: true
+  ios: false
+  android_12:
+      color: "#16A75C"
+      image: "assets/images/bola_zone_round.png"
