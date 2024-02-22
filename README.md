@@ -9,7 +9,7 @@
 
 ## Screenshots
 
-![App Screenshot](https://github.com/agisrh/Flutter-Bola-Zone/blob/master/screenshoots/screenshoots.png?raw=true)
+![App Screenshot](https://github.com/agisrh/Flutter-Bola-Zone/blob/master/screenshoots/screenshoot.png?raw=true)
 
 
 ## Getting Started
