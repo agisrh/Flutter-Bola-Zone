@@ -67,5 +67,4 @@ limitations under the License.
 
 ## Created & Maintained By
 Agis R Herdiana
-For support, email erha.agis@gmail.com
 
