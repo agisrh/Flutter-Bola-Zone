@@ -1,7 +1,7 @@
 
-# Bola Zone
+# Flutter Bola Zone
 
-**Bola Zone** is an open-source application that provides information about the **Liga 1 Indonesia**. Created using **Flutter** with the principles of **Clean Architecture** and supported by **BLoC** state management, as well as implementing beautiful UI/UX design.
+**Flutter Bola Zone** is an open-source application that provides information about the **Liga 1 Indonesia**. Created using **Flutter** with the principles of **Clean Architecture** and supported by **BLoC** state management, as well as implementing beautiful UI/UX design.
 
 
 ## Screenshots
