@@ -21,4 +21,7 @@ extension AppModel on BaseResponse {
 
   List<PlayerModel> get playerList =>
       (baseData as List).map((e) => PlayerModel.fromJson(e)).toList();
+
+  List<NewsModel> get newsList =>
+      (baseData as List).map((e) => NewsModel.fromJson(e)).toList();
 }

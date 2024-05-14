@@ -71,6 +71,9 @@ class MyApp extends StatelessWidget {
         BlocProvider<PlayerBloc>(
           create: (context) => PlayerBloc(),
         ),
+        BlocProvider<NewsBloc>(
+          create: (context) => NewsBloc()..add(GetNews()),
+        ),
 
         BlocProvider<IndexBloc>(
           create: (context) => IndexBloc(),

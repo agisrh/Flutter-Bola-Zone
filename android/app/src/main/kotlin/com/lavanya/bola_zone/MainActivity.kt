@@ -1,4 +1,4 @@
-package com.lavanya.bola_zone
+package com.bolazone.com
 
 import io.flutter.embedding.android.FlutterActivity
 

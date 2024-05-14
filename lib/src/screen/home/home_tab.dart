@@ -144,21 +144,12 @@ class _HomeTabState extends State<HomeTab> {
                   );
                 }
                 if (state is NextMatchSuccess) {
-                  if (state.matchFilter.isNotEmpty) {
-                    List<MatchModel> match3data =
-                        state.matchFilter.getRange(0, 3).toList(); // get 3 data
-                    return _buildNextMatch(
-                      matchdata: match3data,
-                      date: state.matches.first.date ?? "",
-                    );
-                  } else {
-                    return Container(
-                      margin: const EdgeInsets.only(top: 50),
-                      child: const Center(
-                        child: Text('Match not available...'),
-                      ),
-                    );
-                  }
+                  List<MatchModel> match3data =
+                      state.matchFilter.getRange(0, 3).toList(); // get 3 data
+                  return _buildNextMatch(
+                    matchdata: match3data,
+                    date: state.matches.first.date ?? "",
+                  );
                 }
                 return const SizedBox.shrink();
               },

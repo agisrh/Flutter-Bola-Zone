@@ -3,8 +3,8 @@ import 'package:bola_zone/gen/assets.gen.dart';
 import 'package:bola_zone/src/theme/app_theme.dart';
 import 'package:bola_zone/src/screen/home/home_tab.dart';
 import 'package:bola_zone/src/screen/home/team_tab.dart';
-import 'package:bola_zone/src/screen/error_screen.dart';
-import 'package:bola_zone/src/screen/development_screen.dart';
+import 'package:bola_zone/src/screen/home/news_tab.dart';
+//import 'package:bola_zone/src/screen/error_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -27,8 +27,8 @@ class _HomeScreenState extends State<HomeScreen> {
     final List<Widget> pages = [
       const HomeTab(),
       const TeamTab(),
-      const DevelopmentScreen(),
-      const ErrorScreen(),
+      const NewsTab(),
+      //const ErrorScreen(),
     ];
 
     return PopScope(
@@ -75,15 +75,15 @@ class _HomeScreenState extends State<HomeScreen> {
                     : AppsTheme.color.neutral,
               ),
             ),
-            menuItem(
-              text: 'Account',
-              icon: Assets.icons.account.image(
-                height: 25,
-                color: _currentIndex == 3
-                    ? AppsTheme.color.primaryGreen
-                    : AppsTheme.color.neutral,
-              ),
-            ),
+            // menuItem(
+            //   text: 'Account',
+            //   icon: Assets.icons.account.image(
+            //     height: 25,
+            //     color: _currentIndex == 3
+            //         ? AppsTheme.color.primaryGreen
+            //         : AppsTheme.color.neutral,
+            //   ),
+            // ),
           ],
         ),
       ),

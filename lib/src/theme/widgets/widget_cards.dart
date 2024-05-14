@@ -273,3 +273,90 @@ class NextMatchCard extends StatelessWidget {
     );
   }
 }
+
+class NewsCard extends StatelessWidget {
+  final NewsModel news;
+  const NewsCard({super.key, required this.news});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      //width: 235,
+      decoration: BoxDecoration(
+        color: AppsTheme.color.neutral.shade100,
+        borderRadius: const BorderRadius.all(
+          Radius.circular(8),
+        ),
+        boxShadow: const [
+          BoxShadow(
+            color: Color.fromRGBO(138, 149, 158, 0.2),
+            blurRadius: 6,
+            offset: Offset(0, 3),
+          )
+        ],
+      ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            height: 150,
+            decoration: BoxDecoration(
+              color: AppsTheme.color.neutral.shade400,
+              borderRadius: const BorderRadius.only(
+                topLeft: Radius.circular(8),
+                topRight: Radius.circular(8),
+              ),
+            ),
+            child: Stack(
+              fit: StackFit.expand,
+              children: [
+                ClipRRect(
+                  borderRadius: const BorderRadius.only(
+                    topLeft: Radius.circular(8),
+                    topRight: Radius.circular(8),
+                  ),
+                  child: Image.network(
+                    news.thumbnail,
+                    fit: BoxFit.fill,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  news.title,
+                  style: TextStyle(fontSize: 12.sp),
+                ),
+                SizedBox(height: 3.h),
+                // Row(
+                //   children: [
+                //     Icon(
+                //       Iconsax.calendar_2,
+                //       size: 15,
+                //       color: AppTheme.color.neutral.shade600,
+                //     ),
+                //     SizedBox(width: 5.w),
+                //     Text(
+                //       highlight.date,
+                //       style: TextStyle(
+                //         fontSize: 10.sp,
+                //         letterSpacing: 0.5,
+                //         color: AppTheme.color.neutral.shade600,
+                //       ),
+                //     )
+                //   ],
+                // ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
