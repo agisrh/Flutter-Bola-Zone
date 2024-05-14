@@ -41,9 +41,9 @@ class MyApp extends StatelessWidget {
         BlocProvider<MatchBloc>(
           create: (context) => MatchBloc()..add(GetMatches()),
         ),
-        BlocProvider<NextMatchBloc>(
-          create: (context) => NextMatchBloc()..add(GetNextMatches()),
-        ),
+        // BlocProvider<NextMatchBloc>(
+        //   create: (context) => NextMatchBloc()..add(GetNextMatches()),
+        // ),
         BlocProvider<CounterBloc>(
           create: (context) => CounterBloc(),
         ),
@@ -70,6 +70,10 @@ class MyApp extends StatelessWidget {
         ),
         BlocProvider<PlayerBloc>(
           create: (context) => PlayerBloc(),
+        ),
+
+        BlocProvider<IndexBloc>(
+          create: (context) => IndexBloc(),
         ),
       ],
       child: const MyApp(),

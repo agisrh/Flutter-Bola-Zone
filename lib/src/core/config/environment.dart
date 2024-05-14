@@ -11,7 +11,8 @@ class Env {
       case Environment.staging:
         return "https://ligaindonesia-api.vercel.app/api/$version/";
       default:
-        return "http://192.168.1.72:8000/api/$version/";
+        return "https://ligaindonesia-api.vercel.app/api/$version/";
+      //return "http://192.168.1.72:8000/api/$version/";
     }
   }
 }

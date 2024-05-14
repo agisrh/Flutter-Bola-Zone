@@ -15,9 +15,9 @@ void main() async {
   runApp(
     AppConfig(
       appName: Env.appName,
-      env: Environment.dev,
+      env: Environment.production,
       debugTag: true,
-      flavorName: "dev",
+      flavorName: "prod",
       initialRoute: Routes.home,
       child: MyApp.runWidget(),
     ),

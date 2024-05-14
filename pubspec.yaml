@@ -21,11 +21,15 @@ dependencies:
   carousel_slider: ^4.2.1
   shimmer: ^3.0.0
   cached_network_image: ^3.2.3
+  equatable: ^2.0.5
+
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
+  bloc_test: ^9.1.6
+  mocktail: ^1.0.3
   build_runner: null
   flutter_gen_runner: null
   flutter_native_splash: null

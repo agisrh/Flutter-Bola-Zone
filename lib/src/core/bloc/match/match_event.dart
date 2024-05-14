@@ -6,3 +6,5 @@ class GetMatches extends MatchEvent {
   final String? gameweek;
   GetMatches({this.gameweek});
 }
+
+class GetNextMatches extends MatchEvent {}

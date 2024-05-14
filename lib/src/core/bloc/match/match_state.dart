@@ -21,3 +21,17 @@ class MatchError extends MatchState {
   MatchError({required this.message});
   final String message;
 }
+
+class NextMatchInitial extends MatchState {}
+
+// State Loaidng
+class NextMatchLoading extends MatchState {}
+
+// State Success
+class NextMatchSuccess extends MatchState {
+  final List<MatchModel> matches;
+  final List<MatchModel> matchFilter;
+  final int? gameWeek;
+  NextMatchSuccess(
+      {required this.matches, required this.matchFilter, this.gameWeek});
+}

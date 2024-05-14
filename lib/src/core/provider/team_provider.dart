@@ -2,7 +2,7 @@ import 'package:bola_zone/src/core/export_helper.dart';
 import 'package:bola_zone/src/core/config/network/base_response.dart';
 
 class TeamProvider {
-  static ApiService apiService = ApiService(Env.baseUrl());
+  static ApiService apiService = ApiService(baseUrl: Env.baseUrl());
 
   Future<BaseResponse> fetchTeamList() async {
     var response = await apiService.call(

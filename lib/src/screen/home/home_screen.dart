@@ -31,9 +31,12 @@ class _HomeScreenState extends State<HomeScreen> {
       const ErrorScreen(),
     ];
 
-    return WillPopScope(
-      onWillPop: () {
-        return Future.value(false);
+    return PopScope(
+      canPop: false,
+      onPopInvoked: (didPop) async {
+        if (didPop) {
+          return;
+        }
       },
       child: Scaffold(
         body: pages[_currentIndex],

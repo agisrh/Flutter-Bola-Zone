@@ -9,6 +9,9 @@ class NextMatchScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final MatchBloc nextMatchBloc = MatchBloc();
+    nextMatchBloc.add(GetNextMatches());
+
     return Scaffold(
       appBar: AppsBar(
         text: 'Upcoming Match',
@@ -16,14 +19,14 @@ class NextMatchScreen extends StatelessWidget {
         color: AppsTheme.color.primaryGreen,
       ),
       backgroundColor: AppsTheme.color.neutral.shade300,
-      body: BlocBuilder<NextMatchBloc, NextMatchState>(
+      body: BlocBuilder<MatchBloc, MatchState>(
         builder: (context, state) {
-          if (state is NextMatchLoading) {
+          if (state is MatchLoading) {
             return const Center(
               child: CircularProgressIndicator(),
             );
           }
-          if (state is NextMatchSuccess) {
+          if (state is MatchSuccess) {
             return ListView.separated(
               separatorBuilder: (context, index) => 15.height,
               itemCount: state.matches.length,

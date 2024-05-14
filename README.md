@@ -1,7 +1,7 @@
 
 # Flutter Bola Zone
 
-**Flutter Bola Zone** is an open-source application that provides information about the **Liga 1 Indonesia**. Created using **Flutter** with the principles of **Clean Architecture** and supported by **BLoC** state management, as well as implementing beautiful UI/UX design.
+**Flutter Bola Zone** is an open-source application that provides information about the **Liga 1 Indonesia**. Created using **Flutter** with the principles of **Clean Architecture** and supported by **BloC** state management, as well as implementing beautiful UI/UX design.
 
 
 ## Screenshots
@@ -27,12 +27,13 @@ samples, guidance on mobile development, and a full API reference.
 | [Dio](https://pub.dev/packages/dio) | Networking |
 | [Flutter Screen Util](https://pub.dev/packages/flutter_screenutil) | Adapting Screen |
 | [Go Router](https://pub.dev/packages/go_router) | Routing |
-| [Bloc](https://pub.dev/packages/bloc) | State Management |
+| [BloC](https://pub.dev/packages/bloc) | State Management |
 | [Carousel Slider](https://pub.dev/packages/carousel_slider) | Slider Widget |
 | [Shimmer](https://pub.dev/packages/shimmer) | Loading Effect |
 | [Cached Network Image](https://pub.dev/packages/cached_network_image) | Cache Image |
 | [Flutter Native Splash](https://pub.dev/packages/flutter_native_splash) | Customize Splash Screen |
 | [Flutter Gen Runner](https://pub.dev/packages/flutter_gen_runner) | Assets Generator |
+| [Equatable](https://pub.dev/packages/equatable) | Equality Comparisons |
 
 ## Available Feature
 | Feature                | Status|

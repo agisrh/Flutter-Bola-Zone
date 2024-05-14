@@ -33,5 +33,21 @@ class MatchBloc extends Bloc<MatchEvent, MatchState> {
         MatchError(message: 'Something wrong');
       }
     });
+
+    // Get Next Match
+    on<GetNextMatches>((event, emit) async {
+      // Last Matches
+      emit(NextMatchLoading());
+      final matches = await _matchRepo.getNextMatches();
+
+      // Filter data without date
+      List<MatchModel> lastMatchFilter =
+          matches.matchList.where((i) => i.homeClub != null).toList();
+
+      emit(NextMatchSuccess(
+        matches: matches.matchList,
+        matchFilter: lastMatchFilter,
+      ));
+    });
   }
 }
