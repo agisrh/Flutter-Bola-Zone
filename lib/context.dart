@@ -1,4 +1,5 @@
 import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 extension BuildContextExtension on BuildContext {
@@ -12,19 +13,13 @@ extension BuildContextExtension on BuildContext {
 
   Color get primaryColor => Theme.of(this).primaryColor;
 
-  Size get screenSize => MediaQuery.of(this).size;
+  Size get screenSize => MediaQuery.sizeOf(this);
 
-  double get screenHeight => MediaQuery.of(this).size.height;
+  double get screenHeight => MediaQuery.sizeOf(this).height;
 
-  double get screenWidth => MediaQuery.of(this).size.width;
+  double get screenWidth => MediaQuery.sizeOf(this).width;
 
-  double get minScreenSize => min(
-        MediaQuery.of(this).size.height,
-        MediaQuery.of(this).size.width,
-      );
+  double get minScreenSize => min(screenHeight, screenWidth);
 
-  double get maxScreenSize => max(
-        MediaQuery.of(this).size.height,
-        MediaQuery.of(this).size.width,
-      );
+  double get maxScreenSize => max(screenHeight, screenWidth);
 }
